@@ -1,0 +1,17 @@
+(defwindow hotzone
+  :monitor 0
+  :geometry (geometry
+              :x "0px"
+              :y "0px"
+              :width "4px"
+              :height "36%"
+	      :anchor "right center")
+  :stacking "fg"
+  :exclusive false
+  (eventbox
+  :onhover "eww open sidepanel"
+  (box
+    :class "hotzone"
+    :orientation "v")
+  )
+)

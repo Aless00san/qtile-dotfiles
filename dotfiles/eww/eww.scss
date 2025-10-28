@@ -1,0 +1,32 @@
+.clock-box {
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+window {
+  background-color: transparent;
+}
+
+.clock-text {
+  font-size: 32px;
+  color: #ffffff;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.hotzone {
+  background-color: transparent; 
+}
+
+.sidepanel { 
+  background-color: rgba(51, 51, 51, 0.6);
+}
+
+.cover-art {
+  background-size: cover;
+  background-position: center; 
+}
+
+.player-bt {
+  font-size: 48px;
+}

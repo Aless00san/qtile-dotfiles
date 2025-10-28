@@ -1,0 +1,15 @@
+;; ~/.config/eww/eww.yuck
+
+;; Widgets
+(include "widgets/reloj.yuck")
+;; Windows
+(include "windows/top_clock.yuck")
+(include "windows/hotzone.yuck")
+(include "windows/sidepanel.yuck")
+
+(defvar font-family "0xProto Nerd Font")
+(defvar font-color "#ff0000")
+(defvar font-size 48)
+(deflisten song_title "playerctl -p ncspot metadata title --follow")
+(deflisten song_artist "playerctl -p ncspot metadata artist --follow")
+(deflisten album_art "playerctl -p ncspot metadata mpris:artUrl --follow")

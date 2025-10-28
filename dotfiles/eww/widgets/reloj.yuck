@@ -1,0 +1,13 @@
+(defwidget reloj []
+  (box
+    :orientation "vertical"
+    :spacing 0
+    :padding 10
+    (label
+      :text "${formattime(EWW_TIME, '%H:%M')}"
+      :style "font-family: '0xProto Nerd Font'; font-weight: bold; font-size: 124px;
+      color: #FFFFFF;"
+    )
+  )
+)
+

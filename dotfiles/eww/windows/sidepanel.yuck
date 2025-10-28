@@ -1,0 +1,44 @@
+(defwindow sidepanel
+  :monitor 0
+  :geometry (geometry
+              :x "0px"
+              :y "0px"
+              :width "600px"
+              :height "35%"
+	      :anchor "right center")
+  :exclusive false
+  :stacking "fg"
+  (eventbox
+  :onhoverlost "bash -c 'sleep 0.1; eww close sidepanel'"
+  	(box :class "panel"
+		(box
+		:orientation "v"
+  			(label
+  				:text song_title
+  				:style "font-size: 20px";
+				:limit-width 18
+				:lines 2
+  			)
+  			(label
+  				:text song_artist
+  				:style "font-size: 18px; color: gray";
+				:limit-width 18)
+			(box
+			:orientation "h"
+				(button :class "player-bt"
+					:onclick "playerctl -p ncspot previous" "󰙤"
+				)
+				(button :class "player-bt"
+					:onclick "playerctl -p ncspot play-pause" "󰐎" 
+				)
+				(button :class "player-bt"
+					:onclick "playerctl -p ncspot next" "󰙢"
+				)
+			)
+		)
+  		(image  :class "cover-art"
+  			:style "background-image: url('${album_art}');"
+  		)
+ 	 )
+  )
+)

@@ -1,0 +1,15 @@
+(include "widgets/reloj.yuck")
+
+(defwindow top_clock
+           :monitor 0
+           :geometry (geometry :x "50px"
+                               :y "50px"
+                               :width "13%"
+                               :height "30px"
+                               :anchor "top center")
+           :stacking "bg"
+           :windowtype "dock"
+           :wm-ignore false
+           :transparent true
+           (reloj)
+)

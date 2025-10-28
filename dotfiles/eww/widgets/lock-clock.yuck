@@ -1,0 +1,12 @@
+(defwidget lock-clock []
+  (box
+    :orientation "vertical"
+    :spacing 3
+    :padding 20
+    (label
+      :text "${formattime(EWW_TIME, '%H:%M')}"
+      :style "font-family: '0xProto Nerd Font'; font-weight: bold; font-size: 240px;
+      color: #000000;"
+    )
+  )
+)

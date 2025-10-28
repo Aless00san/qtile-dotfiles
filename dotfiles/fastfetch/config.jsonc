@@ -1,0 +1,45 @@
+{
+  "logo": {
+    "source": "~/.config/fastfetch/logos/anime-uwu.txt",
+    "type": "file",
+    "color": {
+      "1": "38;2;239;184;111",     // amarillo
+      "2": "38;2;255;255;255",   // blanco
+      "3": "38;2;255;0;0"        // rojo
+    }
+  },
+
+  "display": {
+      "color": {
+        "keys": "38;2;239;184;111",       
+      }
+    },
+
+  "modules": [
+      {
+        "type": "os"
+      },
+      {
+        "type": "host"
+      },
+      {
+        "type": "kernel"
+      },
+      {
+      	"type": "de"
+      },
+      {
+        "type": "cpu"
+      },
+      {
+     	"type": "gpu"
+      },
+      {
+        "type": "memory"
+      },
+      { "type": "break" },
+      {
+        "type": "colors"
+      }
+    ]
+}

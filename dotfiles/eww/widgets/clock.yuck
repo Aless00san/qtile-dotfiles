@@ -1,4 +1,4 @@
-(defwidget reloj []
+(defwidget clock []
   (box
     :orientation "vertical"
     :spacing 0

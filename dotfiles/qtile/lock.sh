@@ -3,7 +3,7 @@
 CLEAR='#ffffff22'
 WHITE='ffffffff'
 
-i3lock --image=/home/alesan/Descargas/a_lockscreen.png \
+i3lock --image=/home/alesan/lockscreen.png \
 	   --insidever-color=$CLEAR     \
 	   --inside-color=$CLEAR        \
 	   --blur 8 \
